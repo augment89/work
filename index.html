@@ -280,7 +280,7 @@ tr:last-child td{border-bottom:none}
   <div style="height:14px"></div>
   <div class="chips" style="grid-template-columns:repeat(3,1fr)">
     <div class="chip blue"><div class="chip-val" id="dlDays">0</div><div class="chip-lbl">أيام العمل</div></div>
-    <div class="chip orange"><div class="chip-val" id="dlWorkers">0</div><div class="chip-lbl">إجمالي العمال</div></div>
+    <div class="chip orange"><div class="chip-val" id="dlWorkers">0</div><div class="chip-lbl">إجمالي اليوميات </div></div>
     <div class="chip green"><div class="chip-val" id="dlCost">0</div><div class="chip-lbl">تكلفة الموقع</div></div>
   </div>
   <div class="sec-hdr">تواريخ الدوام</div>
@@ -787,7 +787,7 @@ function renderDaily(){
       <div style="width:38px;height:38px;background:#eff6ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">📍</div>
       <div class="list-item-info" onclick="openDailyLoc('${locKey}')">
         <div class="li-main">${loc}</div>
-        <div class="li-sub">${dates.length} يوم عمل · ${locWorkers} عامل · ${fmt(locCost)} ريال</div>
+        <div class="li-sub">${dates.length} يوم عمل · ${locWorkers} اجمالي اليوميات · ${fmt(locCost)} ريال</div>
       </div>
       <span class="arrow" onclick="openDailyLoc('${locKey}')">‹</span>
       <button class="del-btn" onclick="event.stopPropagation();dDelLocation('${locKey}')">🗑</button>`;
